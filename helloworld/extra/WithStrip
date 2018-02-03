@@ -1,0 +1,22 @@
+
+main:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+08048080 <.text>:
+ 8048080:	55                   	push   ebp
+ 8048081:	89 e5                	mov    ebp,esp
+ 8048083:	b8 04 00 00 00       	mov    eax,0x4
+ 8048088:	bb 01 00 00 00       	mov    ebx,0x1
+ 804808d:	8b 55 0c             	mov    edx,DWORD PTR [ebp+0xc]
+ 8048090:	8b 4d 08             	mov    ecx,DWORD PTR [ebp+0x8]
+ 8048093:	cd 80                	int    0x80
+ 8048095:	5d                   	pop    ebp
+ 8048096:	c3                   	ret    
+ 8048097:	6a 0e                	push   0xe
+ 8048099:	68 b0 90 04 08       	push   0x80490b0
+ 804809e:	e8 dd ff ff ff       	call   0x8048080
+ 80480a3:	83 c4 08             	add    esp,0x8
+ 80480a6:	b8 01 00 00 00       	mov    eax,0x1
+ 80480ab:	cd 80                	int    0x80
